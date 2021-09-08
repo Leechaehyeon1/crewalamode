@@ -1,0 +1,328 @@
+.contents {
+  margin-bottom: 200px;
+  background: #fff;
+}
+
+/* sections common */
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content_txt {
+  margin: 40px 0;
+  font-size: 2.0833vw;
+  line-height: 1.2;
+}
+.explore {
+  display: inline-block;
+  padding: 5px 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.explore:hover, .explore:focus {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #333;
+  border-radius: 0px;
+  padding: 5px 18px;
+  transition: all 0.3s;
+}
+
+/* main_visual */
+.main_visual {
+  height: 100vh;
+}
+.main_visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_visual .txt_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+  text-transform: uppercase;
+}
+
+/* about_wrap */
+.about_wrap {
+  padding: 100px 0;
+  background: #ebe8e2;
+}
+.about_wrap .content_txt {
+  font-size: 2.4306vw;
+}
+.about_wrap .explore:hover, .explore:focus {
+  background: #ebe8e2;
+}
+
+/* approach */
+.approach {
+  padding: 100px 0;
+}
+.approach .left {
+  width: 45%;
+}
+.approach .left ul li{
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+.approach .left ul li:last-child {
+  margin-bottom: 0px;
+}
+.approach .left ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.approach .left ul li:hover a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+}
+.approach .left ul li a img {
+  width: 100%;
+}
+.approach .left ul li a span {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s;
+}
+.approach .left ul li:hover a span {
+  opacity: 1;
+  font-size: 35px;
+  font-style: italic;
+}
+.approach .left ul li a span b {
+  margin-right: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.approach .right {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 48%;
+  height: 100%;
+}
+.approach .right .txt_wrap {
+  position: absolute;
+  bottom: 10%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.approach .right .txt_wrap.on {
+  position: fixed;
+  bottom: 60%;
+  transform: translateY(50%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+/* sectors */
+.sectors {
+  position: relative;
+  margin-bottom: 17%;
+  padding: 100px 0 15%;
+  background: #f2f0eb;
+}
+.sectors .list {
+  display: none;
+  width: 100%;
+  max-width: 1400px;
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  transform: translateY(0);  
+}
+.sectors .list.on {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  transform: translateX(-50%);
+}
+.sectors .list li {
+  width: calc((100% - 40px) / 3);
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+}
+.sectors .list.on li {
+  opacity: 1;
+  animation-name: sectorsAni;
+  animation-duration: 0.7s;
+}
+.sectors .list.on li:nth-child(1) {
+  animation-duration: 0.8s;
+}
+.sectors .list.on li:nth-child(2) {
+  animation-duration: 0.9s;
+}
+.sectors .list.on li:nth-child(3) {
+  animation-duration: 1s;
+}
+.sectors .list li a {
+  display: block;
+  position: relative;
+}
+.sectors .list li a img {
+  width: 100%;
+  transition: 1s;
+}
+.sectors .list li a h3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 1s;
+}
+.sectors .list li a:hover img, .sectors .list li a:focus img {
+  transform: scale(1.2);
+}
+.sectors .list li a:hover h3, .sectors .list li a:focus h3 {
+  letter-spacing: 2px;
+}
+
+@keyframes sectorsAni {
+  0% {opacity: 0;transform: translateY(300px);}
+  30% {opacity: 0;transform: translateY(300px);}
+}
+
+
+/* service */
+.service {
+  padding: 100px 0;
+}
+.service .left {
+  width: 48%;
+  float: left;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: -70%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.service .left.on {
+  margin-left: 0%;
+  opacity: 1;
+}
+.service .left img {
+  width: 100%;
+}
+.service .right {
+  width: 45%;
+  float: right;
+}
+.service .right .txt_wrap {
+  padding-top: 70px;
+}
+
+/* journal */
+.journal {
+  margin-top: -250px;
+  padding: 21% 0 15%;
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f0eb;
+}
+.journal h2 {
+  margin-bottom: 100px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.journal .list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.journal .list li {
+  width: calc((100% - 60px) / 4);
+  opacity: 0;
+  transition: 0.5s;
+}
+.journal .list.on li {
+  opacity: 1;
+  animation-name: journalAni;
+  animation-duration: 0.5s;
+}
+.journal .list.on li:nth-child(1){
+    animation-duration: 0.6s;
+}
+.journal .list.on li:nth-child(2){
+    animation-duration: 0.7s;
+}
+.journal .list.on li:nth-child(3){
+    animation-duration: 0.8s;
+}
+.journal .list.on li:nth-child(4){
+    animation-duration: 0.9s;
+}
+.journal .list li a {
+  display: block;
+}
+.journal .list li a .img_wrap {
+  padding-top: 66.6667%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.journal .list li a .img_wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.journal .list li a h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+.journal .list li a p {
+  font-size: 16px;
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+
+@keyframes journalAni {
+  0% {opacity: 0;transform: translateY(200px);}  
+  30% {opacity: 0;transform: translateY(200px);}  
+}

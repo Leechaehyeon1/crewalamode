@@ -1,0 +1,248 @@
+@media screen and (max-width: 1400px){
+  .content_txt {
+    font-size: 2.5vw;
+  }
+
+  /* header */
+
+  /* main */
+  .sectors .list.on {
+    padding: 0 50px;
+    bottom: -25%;
+  }
+
+  .journal .list li a p {
+    text-align: left;
+  }
+
+  /* footer */
+}
+
+@media screen and (max-width: 1024px){
+    .about_wrap .content_txt {
+      font-size: 3vw;
+    }
+
+    /* header */
+
+    /* main */
+    .approach .left {
+      width: 48%;
+    }
+    .approach .right .txt_wrap.on {
+      right: 4%;
+      width: 41%;
+    }
+
+    .sectors .list li {
+      width: calc((100% - 30px) / 3);
+    }
+    .sectors .list li a h3 {
+      font-size: 23px;
+    }
+
+    .journal {
+      margin-top: -200px;
+    }
+    .journal h2 {
+      margin-bottom: 75px;
+    }
+
+    /* footer */
+}
+@media screen and (max-width: 768px){
+    .contents {
+      margin-bottom: 300px;
+    }
+
+    .inner {
+      padding: 0 30px;
+    }
+
+    .content_txt {
+      font-size: 2.7vw;
+    }
+
+    /* header */
+    .header .contact {
+      display: none;
+      float: left;
+    }
+    nav.gnb.on {
+      width: 300px;
+    }
+    nav.gnb ul li.mobile {
+      display: block;
+      position: absolute;
+      bottom: -70px;
+      width: 100%;
+      height: 50px;
+    }
+    nav.gnb ul li.mobile a {
+      display: block;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    
+    /* main */
+    .approach .left {
+      width: 63%;
+    }
+    .approach .left ul li {
+      opacity: 0.4;
+    }
+    .approach .right {
+      z-index: 5;
+    }
+    .approach .right .txt_wrap.on {
+      width: 57%;
+      padding: 30px 0;
+      border-radius: 5px;
+    }
+
+    .service .inner {
+      padding: 50px 30px;
+    }
+    .sectors .list.on {
+      flex-wrap: wrap;
+      bottom: -113%;
+      padding: 0 30px;
+    }
+    .sectors .list li {
+      width: calc((100% - 30px) / 2);
+      margin-bottom: 30px;
+    }
+    .sectors .list li a h3 {
+      font-size: 22px;
+    }
+
+    .service {
+      padding: 350px 0 200px;
+    }
+    .service .left {
+      width: 50%;
+    }
+
+    .journal {
+      margin-top: -155px;
+    }
+    .journal .list li {
+      width: calc((100% - 20px) / 2);
+      margin-bottom: 30px;
+    }
+
+    /* footer */
+    footer {
+      height: 310px;
+    }
+    footer .inner {
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100%;
+    }
+    footer .inner .footer_logo {
+      text-align: center;
+      width: 100%;
+    }
+    footer .inner .contact {
+      text-align: center;
+      width: 100%;
+      padding: 30px 0 40px;
+    }
+    footer .inner .sns {
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    footer .inner .sns li {
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .content_txt {
+    margin: 31px 0;
+    font-size: 4.7vw;
+    line-height: 1.5;
+  }
+
+  /* header */
+  .header .logo {
+    width: 235px;
+    left: 21%;
+    transform: translate(0, -50%);
+  }
+  .header.on .logo {
+    background-size: 90%;
+  }
+  .header .menu_btn {
+    width: 27px;
+  }
+
+  /* main */
+  .main_visual .txt_wrap {
+    width: 100%;
+    font-size: 7vw;
+  }
+  .about_wrap .content_txt {
+    font-size: 4.3vw;
+    line-height: 1.35;
+  }
+
+  .approach .left {
+    width: 100%;
+  }
+  .approach .right .txt_wrap.on {
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .sectors .list.on {
+    position: relative;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .sectors .list li {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .sectors .list li a h3 {
+    font-size: 21px;
+  }
+  
+  .service {
+    padding: 50px 0px;
+  }
+  .service .inner {
+    padding: 0px 30px;
+  }
+  .service .left {
+    float: none;
+    width: 100%;
+  }
+  .service .right {
+    float: none;
+    width: 100%;
+  }
+  .service .right .txt_wrap {
+    padding-top: 50px;
+  }
+  
+  .journal {
+    margin-top: 0;
+    padding: 17% 0 15%;
+  }
+  .journal h2 {
+    margin-bottom: 55px;
+  }
+  .journal .list.on li {
+    width: 100%;
+  }
+  .journal .list li a h3 {
+    margin: 30px 0 25px;
+  }
+
+  /* footer */
+}
