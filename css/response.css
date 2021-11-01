@@ -17,6 +17,9 @@
   .txt_wrap p {
     font-size: 2.7vw;
   }
+  .txt_wrap a {
+    font-size: 1.5vw;
+  }
   .approach .inner {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +182,9 @@
   .txt_wrap p {
     font-size: 4.5vw;
   }
+  .txt_wrap a {
+    font-size: 1.7vw;
+  }
   .contents {
     margin-bottom: 47vw;
   }
@@ -274,6 +280,9 @@
     font-size: 5vw;
     line-height: 1.35;
     margin: 33px 0;
+  }
+  .txt_wrap a {
+    font-size: 2vw;
   }
   .contents {
     margin-bottom: 50vw;
