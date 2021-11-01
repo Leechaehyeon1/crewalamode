@@ -10,6 +10,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+  /* header */
+  .header .contact {
+    font-size: 1.35vw;
+  }
+
   /* main */
   .txt_wrap .tit {
     font-size: 2vw;
@@ -76,6 +81,9 @@
 
 @media screen and (max-width: 768px) {
   /* header */
+  .header .contact {
+    font-size: 2vw;
+  }
   .header .gnb ul li a {
     font-size: 3vw;
   }

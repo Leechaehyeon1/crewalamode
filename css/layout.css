@@ -73,7 +73,7 @@ body {
 }
 .header .contact {
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 50px;
   transform: translateY(-50%);
   font-size: 0.9028vw;
