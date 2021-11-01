@@ -1,173 +1,183 @@
-/* body CSS */
 body {
   font-family: 'Nanum Myeongjo', serif;
-  min-width: 320px;
-  letter-spacing: -0.025em;
-  font-size: 14px;
+  font-size: 0.9722vw;
   color: #333;
+  letter-spacing: -0.025em;
+  min-width: 320px;
 }
 
 .inner {
-  max-width: 1450px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 50px;
 }
 
 /* header CSS */
 .header {
   z-index: 10;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
-  padding: 40px 0 25px;
+  padding: 45px 0 25px;
   background: #213135;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
   color: #fff;
+  font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
   transition: 0.4s;
 }
 .header.on {
-  padding: 25px 0 18px;
+  padding: 30px 0 20px;
+  transition: 0.4s;
 }
-.header .menu_btn {
-  display: block;
-  float: left;
+.header .gnb_btn {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
   width: 32px;
   height: 12px;
-  position: relative;
 }
-.header .menu_btn i {
-  position: absolute;
-  left: 0;
+.header .gnb_btn span {
   display: block;
+  background: #fff;
   width: 100%;
   height: 3px;
-  background: #fff;
+  position: absolute;
+  left: 0;
 }
-.header .menu_btn i:nth-child(1) {
-  top: 0px;
+.header .gnb_btn span.a {
+  top: 0;
 }
-.header .menu_btn i:nth-child(2) {
-  bottom: 0px;
+.header .gnb_btn span.b {
+  bottom: 0;
 }
 .header .logo {
-  width: 310px;
-  height: 30px;
-  background: url(../img/logo.jpg) no-repeat center;
-  background-size: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  width: 212px;
+  height: 25px;
+  background: url(../img/logo.jpg) no-repeat left center;
+  background-size: 100%;
   transition: 0.4s;
 }
 .header.on .logo {
-  background-size: 70%;
+  height: 20px;
+  transition: 0.4s;
 }
 .header .logo a {
   display: block;
-  width: 100%;
   height: 100%;
 }
 .header .contact {
-  display: block;
-  float: right;
-}
-
-/* nav */
-nav.gnb {
   position: absolute;
-  left: -1000px;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  font-size: 0.9028vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.header .gnb {
+  position: absolute;
+  left: -100%;
   top: 0;
-  width: 0px;
-  height: 100vh;
-  padding: 95px 50px;
   background: #000;
   color: #fff;
+  width: 0;
+  height: 100vh;
+  padding: 95px 50px;
   text-align: left;
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: 0.7s;
-}
-header.on nav.gnb {
-  width: 300px;
   transition: 0.4s;
 }
-header.on nav.gnb ul {
-  width: 50%;
+.header.on .gnb.on {
+  width: 300px;
 }
-nav.gnb ul {
+.header .gnb.on {
+  left: 0;
+  width: 400px;
+  transition: 0.4s;
+}
+.header .gnb ul {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 60%;
+  padding: 20px 0;
   border-top: 1px solid #555;
   border-bottom: 1px solid #555;
-  padding: 20px 0;
 }
-nav.gnb.on {
-  width: 400px;
-  left: 0;
+.header .gnb ul li a {
+  line-height: 2;
+  font-size: 1.5278vw;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
-nav.gnb ul li a {
-  text-align: left;
-  line-height: 50px;
-  font-size: 22px;
-}
-nav.gnb ul li a span {
-  font-size: 20px;
-  font-family: 'Nanum Myeongjo', serif;
+.header .gnb ul li a span {
+  font-size: 1.3889vw;
+  font-weight: 400;
   font-style: italic;
-  text-transform: none;
+  font-family: 'Nanum Myeongjo', serif;
 }
-nav.gnb ul li.mobile {
+.header .gnb ul li.mobile {
   display: none;
 }
 
-/* footer CSS */
-footer {
-  z-index: -10;
+/* footer css */
+.footer {
+  z-index: -1;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 200px;
-  padding: 75px 0;
+  height: 13.8889vw;
   background: #213135;
   color: #fff;
+  padding: 5.36% 0;
 }
-footer .inner {
+.footer .inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
   font-family: 'Montserrat', sans-serif;
+  padding-left: 20%;
 }
-footer .inner .footer_logo {
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
+.footer .f_logo h2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/f_logo.png) no-repeat left center;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
-footer .inner .contact {
-  width: 30%;
-  align-self: center;
+.footer .f_info {
+  width: 70%;
+  padding: 0 30px;
+}
+.footer .f_info li {
   line-height: 1.4;
 }
-footer .inner .sns {
+.footer .f_sns {
+  width: 30%;
+}
+.footer .f_sns ul {
   display: flex;
   justify-content: space-between;
-  align-self: center;
 }
-footer .inner .sns li {
-  margin: 0 40px;
-  font-size: 12px;
-  font-weight: bold;
+.footer .f_sns ul li {
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 1.0417vw;
+  text-align: center;
 }
-footer .inner .sns li:first-child {
-  margin-left: 0px;
-}
-footer .inner .sns li:last-child {
-  margin-right: 0px;
+.footer .f_sns ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
